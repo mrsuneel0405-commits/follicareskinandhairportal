@@ -1,57 +1,315 @@
-<!doctype html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset='utf-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>Treatment Gallery | Follicare Nellore</title>
-  <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap' rel='stylesheet'>
-  <style>
-    :root{--purple:#6f2f63; --bg:#f9f6f8;}
-    body{font-family:'Open Sans',sans-serif; margin:0; background:var(--bg);}
-    header{background:#fff; padding:15px 5%; display:flex; justify-content:space-between; align-items:center;}
-    .gallery-grid{max-width:1200px; margin:50px auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:25px; padding:0 20px;}
-    .item{background:#fff; border-radius:15px; overflow:hidden; box-shadow:0 10px 20px rgba(0,0,0,0.05); transition:0.3s;}
-    .item:hover{transform:translateY(-10px);}
-    .item img{width:100%; height:280px; object-fit:cover;}
-    .label{padding:15px; text-align:center; font-weight:700; color:var(--purple); text-transform:uppercase; font-size:14px; border-top:1px solid #f0f0f0;}
-    h1{text-align:center; font-family:'Playfair Display',serif; color:var(--purple); font-size:42px; margin-top:40px;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results Gallery — Hair Transplant & Skin Treatments in Nellore | Follicare</title>
+<meta name="description" content="See real hair transplant and skin treatment results at Follicare, Nellore — plus patient video testimonials and our latest Instagram. Book a free consultation.">
+<!-- Note: meta keywords are ignored by Google; real SEO comes from page content, titles and your Google Business Profile. -->
+<meta name="keywords" content="hair transplant results Nellore, skin treatment before after Nellore, Follicare gallery, patient testimonials Nellore">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.follicareskinandhairwellness.com/gallery.html">
+<meta property="og:title" content="Results Gallery & Patient Stories | Follicare Nellore">
+<meta property="og:description" content="Real hair & skin results, video testimonials and Instagram from Follicare, Nellore.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/indexpage.jpg">
+<meta name="geo.region" content="IN-AP">
+<meta name="geo.placename" content="Nellore">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Links your social profiles to your clinic for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Follicare Skin & Hair Wellness",
+  "url": "https://www.follicareskinandhairwellness.com/",
+  "telephone": "+91-7396027092",
+  "address": {"@type":"PostalAddress","streetAddress":"1st Floor, Magunta Layout, Opposite Canara Bank","addressLocality":"Nellore","addressRegion":"Andhra Pradesh","postalCode":"524003","addressCountry":"IN"},
+  "sameAs": [
+    "https://www.instagram.com/follicare.skinandhairclinic/",
+    "https://www.youtube.com/@FollicareClinic"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --purple:#6f2f63; --purple-dark:#52204a; --accent:#2dbf6b; --accent-dark:#229a55;
+  --ink:#2a2230; --muted:#6c6470; --line:#ece4ea; --cream:#fcfaf8; --soft:#f7f1f5;
+  --white:#ffffff; --max:1180px; --radius:18px;
+  --shadow:0 18px 40px rgba(80,30,70,.10); --shadow-sm:0 8px 22px rgba(80,30,70,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;margin:0;color:var(--ink);line-height:1.65;background:var(--cream);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',serif;color:var(--purple);line-height:1.2;margin:0 0 .4em}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-dark);margin-bottom:10px}
+.btn{display:inline-block;padding:14px 30px;border-radius:50px;font-weight:700;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:.25s;font-family:inherit}
+.btn-green{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(45,191,107,.3)}.btn-green:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-purple{background:var(--purple);color:#fff}.btn-purple:hover{background:var(--purple-dark);transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:2px solid var(--purple);color:var(--purple)}.btn-ghost:hover{background:var(--purple);color:#fff}
+
+.topbar{background:var(--purple-dark);color:#fff;font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 20px;gap:10px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}.topbar .rate{color:#ffd86b;font-weight:700}
+header{background:rgba(255,255,255,.97);backdrop-filter:blur(6px);position:sticky;top:0;z-index:1000;box-shadow:0 2px 18px rgba(0,0,0,.06)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.nav .logo img{height:46px;display:block}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--purple)}
+.burger{display:none;background:none;border:none;font-size:26px;color:var(--purple);cursor:pointer}
+
+.crumb{background:var(--soft);font-size:13px;color:var(--muted);padding:10px 0;border-bottom:1px solid var(--line)}
+.crumb a{color:var(--purple);text-decoration:none;font-weight:600}
+
+.page-hero{background:linear-gradient(120deg,#fbf4f8 0%,#f3ecf9 60%,#eef7f1 100%);text-align:center;padding:64px 20px 56px}
+.page-hero h1{font-size:clamp(32px,4.6vw,52px)}
+.page-hero p{color:var(--muted);font-size:18px;max-width:620px;margin:0 auto}
+
+section{padding:66px 0}
+.center{text-align:center}
+.sec-head{max-width:680px;margin:0 auto 44px;text-align:center}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px)}.sec-head p{color:var(--muted);font-size:17px}
+
+/* before/after gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
+.item{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);transition:.3s}
+.item:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.item .imgwrap{position:relative;overflow:hidden}
+.item img{width:100%;height:300px;object-fit:cover;display:block;transition:.5s}
+.item:hover img{transform:scale(1.05)}
+.item .tags{position:absolute;inset:auto 0 0 0;display:flex;justify-content:space-between;padding:10px}
+.item .tags span{background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px}
+.label{padding:16px;text-align:center;font-weight:700;color:var(--purple);text-transform:uppercase;font-size:13px;letter-spacing:.5px}
+
+/* video testimonials */
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.video{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line)}
+.video .frame{position:relative;width:100%;padding-top:56.25%;background:#000}
+.video .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video .vlabel{padding:16px;font-weight:700;color:var(--purple);text-align:center;font-size:15px}
+.yt-bar{display:flex;justify-content:center;margin-top:34px}
+.btn-yt{background:#ff0000;color:#fff;display:inline-flex;align-items:center;gap:10px}
+.btn-yt:hover{background:#d40000;transform:translateY(-2px)}
+
+/* instagram */
+.ig-head{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:8px}
+.ig-handle{font-weight:700;color:var(--purple)}
+.ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:8px}
+.ig-tile{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);display:block;aspect-ratio:1/1}
+.ig-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+.ig-tile:hover img{transform:scale(1.06)}
+.ig-tile .ov{position:absolute;inset:0;background:rgba(111,47,99,.0);display:grid;place-items:center;transition:.3s}
+.ig-tile:hover .ov{background:rgba(111,47,99,.55)}
+.ig-tile .ov span{color:#fff;font-size:30px;opacity:0;transition:.3s}
+.ig-tile:hover .ov span{opacity:1}
+.btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff}
+.btn-ig:hover{transform:translateY(-2px);filter:brightness(1.05)}
+
+/* text testimonials */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.tcard{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--line)}
+.tcard .stars{color:#f5a623;font-size:18px;margin-bottom:10px}
+.tcard p{font-style:italic;color:var(--ink);margin:0 0 16px}
+.tcard .who{font-weight:700;color:var(--purple)}.tcard .who small{display:block;font-weight:400;color:var(--muted)}
+
+.cta-band{background:linear-gradient(120deg,var(--purple),var(--purple-dark));color:#fff;border-radius:24px;padding:54px 40px;text-align:center;box-shadow:var(--shadow)}
+.cta-band h2{color:#fff;font-size:clamp(26px,3.4vw,38px)}.cta-band p{opacity:.9;max-width:560px;margin:0 auto 24px}
+
+footer{background:var(--purple-dark);color:#fff;padding:60px 0 24px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer h4{color:#fff;font-family:'Playfair Display',serif;font-size:19px;margin:0 0 14px}
+footer a{color:rgba(255,255,255,.82);text-decoration:none;display:block;margin-bottom:9px;font-size:14px}footer a:hover{color:#fff}
+footer p{color:rgba(255,255,255,.82);font-size:14px}
+.fbottom{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;text-align:center;font-size:13px;color:rgba(255,255,255,.7)}
+
+.wa-float{position:fixed;right:18px;bottom:84px;z-index:1500;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:28px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:1500;background:#fff;box-shadow:0 -4px 18px rgba(0,0,0,.12);padding:10px 12px;gap:10px}
+.mobile-bar a{flex:1;text-align:center;padding:13px;border-radius:12px;font-weight:700;text-decoration:none;font-size:14px}
+.mobile-bar .c{background:var(--purple);color:#fff}.mobile-bar .b{background:var(--accent);color:#fff}
+.modal{display:none;position:fixed;inset:0;z-index:3000;background:rgba(40,15,35,.8);padding:20px;overflow:auto}
+.modal-box{background:#fff;max-width:440px;margin:6vh auto;border-radius:20px;padding:34px;position:relative;border-top:6px solid var(--accent)}
+.modal-box h2{margin-top:0}
+.modal-box input,.modal-box select{width:100%;padding:13px;margin:8px 0;border:1px solid var(--line);border-radius:10px;font-family:inherit}
+.modal .x{position:absolute;right:18px;top:12px;font-size:30px;color:var(--muted);cursor:pointer;line-height:1}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.3,1)}.reveal.in{opacity:1;transform:none}
+
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:74%;max-width:320px;background:#fff;flex-direction:column;align-items:flex-start;padding:90px 28px;gap:22px;transform:translateX(100%);transition:.3s;box-shadow:-10px 0 30px rgba(0,0,0,.15)}
+  .nav-links.open{transform:none}.burger{display:block;z-index:1100}
+  .mobile-bar{display:flex}.wa-float{bottom:78px}body{padding-bottom:64px}
+  .fgrid{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-<header>
-  <a href="index.html"><img src='https://raw.githubusercontent.com/srinivaskancharla96-netizen/images/main/test.jpg' height="35"/></a>
-  <nav><a href="index.html" style="text-decoration:none; color:#333; font-weight:700;">← Back to Home</a></nav>
-</header>
 
-<h1>Treatment Results Gallery</h1>
+<div class="topbar"><div class="wrap">
+  <span>📍 1st Floor, Magunta Layout, Nellore</span>
+  <span class="rate">★ 4.8 Google Rating</span>
+  <a href="tel:+917396027092">📞 +91 73960 27092</a>
+</div></div>
 
-<div class="gallery-grid">
-  <div class="item">
-    <img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary3.jpg"/>
-    <div class="label">Hair Transplant: 8 Months Result</div>
+<header><div class="nav">
+  <a class="logo" href="index.html"><img src="https://raw.githubusercontent.com/srinivaskancharla96-netizen/images/main/test.jpg" alt="Follicare Skin & Hair Wellness, Nellore"></a>
+  <button class="burger" onclick="toggleNav()" aria-label="Menu">☰</button>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="hair-transplant.html">Hair Transplant</a>
+    <a href="skincare.html">Skin Care</a>
+    <a href="gallery.html" class="active">Results</a>
+    <a href="#" onclick="openModal();return false" class="btn btn-green" style="padding:10px 22px">Book Appointment</a>
+  </nav>
+</div></header>
+
+<div class="crumb"><div class="wrap"><a href="index.html">Home</a> / Results</div></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <span class="eyebrow">Real Transformations</span>
+  <h1>Results Gallery &amp; Patient Stories</h1>
+  <p>Real hair transplant and skin treatment results from our clinic in Nellore, plus video testimonials and our latest from Instagram.</p>
+</section>
+
+<!-- BEFORE / AFTER GALLERY -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Before &amp; After</span><h2>Treatment Results</h2><p>A few real results from Follicare. <!-- EDIT: use consented patient photos --></p></div>
+    <div class="gallery-grid">
+      <div class="item reveal"><div class="imgwrap"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary3.jpg" alt="Hair transplant 8 month before and after result in Nellore"><div class="tags"><span>Before</span><span>After</span></div></div><div class="label">Hair Transplant · 8 Months</div></div>
+      <div class="item reveal"><div class="imgwrap"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallery4.png" alt="HydraFacial instant glow result in Nellore"><div class="tags"><span>Before</span><span>After</span></div></div><div class="label">HydraFacial · Instant Glow</div></div>
+      <div class="item reveal"><div class="imgwrap"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary2.jpg" alt="Acne and skin consultation result in Nellore"><div class="tags"><span>Before</span><span>After</span></div></div><div class="label">Acne Management</div></div>
+      <div class="item reveal"><div class="imgwrap"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary1.jpg" alt="Acne and pigmentation control result in Nellore"><div class="tags"><span>Before</span><span>After</span></div></div><div class="label">Acne &amp; Pigmentation Control</div></div>
+    </div>
   </div>
-  
-  <div class="item">
-    <img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallery4.png"/>
-    <div class="label">Hydrafacial: Instant Glow</div>
-  </div>
+</section>
 
-  <div class="item">
-    <img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary2.jpg"/>
-    <div class="label">Advanced Skin Consultation</div>
+<!-- VIDEO TESTIMONIALS (YouTube) -->
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Patient Stories</span><h2>Video Testimonials</h2><p>Hear directly from our patients and watch treatment videos from the Follicare YouTube channel.</p></div>
+    <div class="video-grid">
+      <!--
+        HOW TO ADD YOUR VIDEOS:
+        1. Open your video on YouTube.
+        2. Copy the ID from the URL — e.g. youtube.com/watch?v=ABC123xyz  →  the ID is ABC123xyz
+           (for Shorts: youtube.com/shorts/ABC123xyz → ID is ABC123xyz)
+        3. Paste it in place of YOUTUBE_VIDEO_ID_x below. Repeat / duplicate a .video block for more.
+      -->
+      <div class="video reveal">
+        <div class="frame"><iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_1" title="Follicare patient testimonial" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="vlabel">Patient Testimonial</div>
+      </div>
+      <div class="video reveal">
+        <div class="frame"><iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_2" title="Follicare hair transplant journey" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="vlabel">Hair Transplant Journey</div>
+      </div>
+      <div class="video reveal">
+        <div class="frame"><iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_3" title="Follicare skin treatment result" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="vlabel">Skin Treatment Result</div>
+      </div>
+    </div>
+    <div class="yt-bar reveal">
+      <!-- EDIT: replace with your exact channel URL once confirmed (e.g. https://www.youtube.com/@YourHandle) -->
+      <a class="btn btn-yt" href="https://www.youtube.com/@FollicareClinic" target="_blank" rel="noopener">▶ Visit our YouTube Channel</a>
+    </div>
   </div>
+</section>
 
-  <div class="item">
-    <img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary1.jpg"/>
-    <div class="label">Acne & Pigmentation Control</div>
+<!-- INSTAGRAM -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Follow Us</span>
+      <h2>Follicare on Instagram</h2>
+      <div class="ig-head"><span class="ig-handle">@follicare.skinandhairclinic</span></div>
+      <p>See our latest treatments, tips and patient transformations.</p>
+    </div>
+    <!-- Tiles link to the Instagram profile. Swap the preview images for your real post screenshots anytime. -->
+    <div class="ig-grid reveal">
+      <a class="ig-tile" href="https://www.instagram.com/follicare.skinandhairclinic/" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallery4.png" alt="Follicare Instagram post preview"><div class="ov"><span>▶</span></div></a>
+      <a class="ig-tile" href="https://www.instagram.com/follicare.skinandhairclinic/" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary2.jpg" alt="Follicare Instagram post preview"><div class="ov"><span>▶</span></div></a>
+      <a class="ig-tile" href="https://www.instagram.com/follicare.skinandhairclinic/" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary3.jpg" alt="Follicare Instagram post preview"><div class="ov"><span>▶</span></div></a>
+      <a class="ig-tile" href="https://www.instagram.com/follicare.skinandhairclinic/" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/mrsuneel0405-commits/follicareskinandhairportal/main/Gallary1.jpg" alt="Follicare Instagram post preview"><div class="ov"><span>▶</span></div></a>
+    </div>
+    <div class="center" style="margin-top:32px"><a class="btn btn-ig" href="https://www.instagram.com/follicare.skinandhairclinic/" target="_blank" rel="noopener">📷 Follow @follicare.skinandhairclinic</a></div>
+
+    <!--
+      OPTIONAL — show your REAL Instagram posts as live embeds:
+      Replace POST_URL with a real post link (e.g. https://www.instagram.com/p/XXXXXXXXX/) and uncomment.
+      The embed.js at the bottom of the page will render them automatically.
+
+      <blockquote class="instagram-media" data-instgrm-permalink="POST_URL" data-instgrm-version="14"></blockquote>
+
+      For a fully automatic, always-updating feed, use a free widget such as Behold.so, SnapWidget or Elfsight
+      and paste their embed code here.
+    -->
   </div>
-</div>
+</section>
 
-<div style="text-align:center; padding:50px;">
-    <p>Want to see more? Follow us on Instagram or book a consultation.</p>
-    <a href="index.html#contact" style="background:var(--purple); color:#fff; padding:15px 30px; border-radius:50px; text-decoration:none;">Book Your Session</a>
-</div>
+<!-- TEXT TESTIMONIALS -->
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Google Reviews</span><h2>What Our Patients Say</h2><p><!-- EDIT: paste real Google reviews here --></p></div>
+    <div class="tgrid">
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"Got my FUE hair transplant here and the results look completely natural. The doctors explained everything patiently."</p><div class="who">Ravi K.<small>Nellore</small></div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"My acne is finally under control after years of trying products. Clean clinic and very professional team."</p><div class="who">Sushma R.<small>Nellore</small></div></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"Did the glutathione and carbon laser sessions — my skin looks so much brighter. Highly recommend Follicare."</p><div class="who">Anusha P.<small>Kavali</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section><div class="wrap"><div class="cta-band reveal">
+  <h2>Want Results Like These?</h2>
+  <p>Book a free consultation with our doctors and start your own transformation.</p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+    <a href="#" onclick="openModal();return false" class="btn btn-green">Book Free Consultation</a>
+    <a href="https://wa.me/917396027092" class="btn" style="background:#25d366;color:#fff">💬 WhatsApp Us</a>
+  </div>
+</div></div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><h4>Follicare Skin &amp; Hair Wellness</h4><p>Doctor-led hair transplant and advanced skin care in Nellore.</p><p style="margin-top:14px">📍 1st Floor, Magunta Layout, Opposite Canara Bank, Nellore, AP</p><p>📞 <a href="tel:+917396027092" style="display:inline">+91 73960 27092</a></p></div>
+    <div><h4>Explore</h4><a href="index.html">Home</a><a href="hair-transplant.html">Hair Transplant</a><a href="skincare.html">Skin Care</a><a href="gallery.html">Results Gallery</a></div>
+    <div><h4>Connect</h4><a href="https://www.instagram.com/follicare.skinandhairclinic/" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@FollicareClinic" target="_blank" rel="noopener">YouTube</a><a href="https://wa.me/917396027092">WhatsApp Chat</a><a href="#" onclick="openModal();return false">Book Appointment</a></div>
+  </div>
+  <div class="fbottom">© 2026 Follicare Skin &amp; Hair Wellness, Nellore. All rights reserved.</div>
+</div></footer>
+
+<a class="wa-float" href="https://wa.me/917396027092" aria-label="WhatsApp">💬</a>
+<div class="mobile-bar"><a class="c" href="tel:+917396027092">📞 Call</a><a class="b" href="#" onclick="openModal();return false">Book Free</a></div>
+
+<div class="modal" id="modal"><div class="modal-box">
+  <span class="x" onclick="closeModal()">&times;</span>
+  <h2>Book Your Free Consultation</h2>
+  <p style="color:var(--muted);margin-top:0;font-size:14px">Fill in your details and our team will call you back shortly.</p>
+  <form onsubmit="submitLead(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Mobile Number" pattern="[0-9+ ]{10,15}" required>
+    <select required><option value="" disabled selected>Select Concern</option><option>Hair Transplant / Hair Loss</option><option>PRP / GFC Therapy</option><option>Acne / Pimples</option><option>Skin Whitening / Glutathione</option><option>Carbon Laser Glow</option><option>Laser Hair Removal</option></select>
+    <button class="btn btn-green" type="submit" style="width:100%;margin-top:6px">Confirm Booking →</button>
+  </form>
+</div></div>
+
+<script>
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
+function openModal(){document.getElementById('modal').style.display='block';document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').style.display='none';document.body.style.overflow=''}
+window.addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+function submitLead(e){e.preventDefault();alert('Thank you! Our team will call you back shortly.');closeModal();e.target.reset();}
+const io=new IntersectionObserver((es)=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<!-- Instagram embed renderer (only needed if you uncomment the live post embeds above) -->
+<script async src="https://www.instagram.com/embed.js"></script>
 </body>
-
 </html>
-
